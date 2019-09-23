@@ -34,5 +34,10 @@ function listBreed(breeds){
             let newBreedElement = document.createElement("li")
             newBreedElement.innerText = breed 
             dogBreeds.appendChild(newBreedElement)
+            newBreedElement.addEventListener("click", colorChangeHandler)
         }
+}
+
+function colorChangeHandler(e) {
+    e.target.style.color = 'dodgerblue'
 }
